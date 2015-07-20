@@ -455,5 +455,4 @@ permalink: /portfolio/
   </iframe>
 </div>
 
-@import {{ "/vendor/lightbox2/dist/css/lightbox.css" | prepend: site.baseurl }}
 <script type="text/javascript" src="{{ "/vendor/lightbox2/dist/js/lightbox.min.js" | prepend: site.baseurl }}"></script>
