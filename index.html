@@ -3,21 +3,71 @@ layout: default
 ---
 
 <div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+  <!-- Carousel
+================================================== -->
+<div id="home" class="carousel slide" >
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#home" data-slide-to="0" class="active"></li>
+    <li data-target="#home" data-slide-to="1"></li>
+    <li data-target="#home" data-slide-to="2"></li>
+    <li data-target="#home" data-slide-to="3"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="/images/director.jpg" class="img-responsive">
+      <div class="container">
+        <div class="carousel-caption">
+          <p>Director</p>
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <img src="/images/deviser.jpg" class="img-responsive">
+      <div class="container">
+        <div class="carousel-caption">
+          <p>Devisor</p>
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <img src="/images/educator.jpg" class="img-responsive">
+      <div class="container">
+        <div class="carousel-caption">
+          <p>Educator</p>
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <img src="/images/performer.jpg" class="img-responsive">
+      <div class="container">
+        <div class="carousel-caption">
+          <p>Performer</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Controls -->
+  <a class="left carousel-control" href="#home" data-slide="prev">
+    <span class="icon-prev"></span>
+  </a>
+  <a class="right carousel-control" href="#home" data-slide="next">
+    <span class="icon-next"></span>
+  </a>
+</div>
+<!-- /.carousel -->
+<div class="container">
+  <div class="hero-unit">
+    <h2>Welcome</h2>
+  </div>
+  <p>I am a theatre artist. I fill different roles in different projects - director, actor, teacher, choreographer, designer - but I am always interested in the whole world of the play. I use theatre to explore the world and to make connections with other artists and with my audience. Thank you for taking the time to come visit my page. I would love to connect with you.  Take a look around, and lets start a dialogue. You can connect with me through the facebook, twitter, and instagram links below. And you can also check out my company, Small Batch Theatre Co. by clicking the link below on the far right.
+  </p>
+  <p>
+    Welcome!
+  </p>
+  <p>
+    Leah Englund Brick
+  </p>
+</div>
+  
 </div>
